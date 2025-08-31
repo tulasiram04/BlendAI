@@ -1,0 +1,170 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Inter", Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.small-logo {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+}
+
+.chat-bot-UI {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  gap: 20px;
+  padding: 20px;
+}
+
+.title-block {
+  margin-bottom: 30px; 
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; 
+  gap: 12px;          
+}
+
+.logo-img {
+  width: 105px; 
+  height: 105px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.logo-text {
+  font-family: "Audiowide", Helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 8px; 
+}
+
+.tagline {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff99;
+}
+
+:root {
+  --chatbox-width: 70%;
+  --chatbox-max-width: 650px;
+}
+
+.chat-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--chatbox-width);
+  max-width: var(--chatbox-max-width);
+  margin: 0 auto;
+  background: #5a5555;
+  border-radius: 30px;
+  padding: 20px 30px;
+  position: relative;
+}
+
+.chat-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: white;
+}
+
+.chat-input::placeholder {
+  color: #ddd;
+}
+
+.send {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  background: #5c5656;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #6d6868;
+}
+
+.button img {
+  width: 18px;
+  height: 18px;
+}
+
+.bottom-left {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.generic-avatar {
+  width: 55px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.arrow-forward {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
